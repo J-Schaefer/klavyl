@@ -1,9 +1,23 @@
+import sys
+print(sys.path)
+sys.path.append("src/klavgen")
+
+import argparse
 from dataclasses import dataclass
 
 from klavgen import *
 
+parser = argparse.ArgumentParser()
+parser.add_argument("--choc", help="Use Kailh Choc switches", action="store_true")
+args = parser.parse_args()
+
+if args.choc:
+    print("Using Kailh Choc switches")
+else:
+    print("Using Cherry MX switches")
+
 # Only changes switch holes & holders to Choc, but keeps MX spacing between keys
-use_choc = False
+use_choc = args.choc
 
 config = Config(
     case_config=CaseConfig(
@@ -134,16 +148,17 @@ texts = [
     # Text(x=11, y=-102, z=8, text="v10", font_size=10, extrude=0.4)
 ]
 
-controller = Controller(x=154, y=14)
+controller = Controller(x=154, y=14)  # default: Arduino Pro Micro
 
 usbc_jack = USBCJack(x=161, y=-51, rotate=-180)
-
+# usbs_jack_controller = USBCJack(x=154, y=14)
 
 keyboard_result = render_and_save_keyboard(
     keys=keys,
     screw_holes=screw_holes,
     controller=controller,
     components=[usbc_jack],
+    # components=[usbc_jack, usbs_jack_controller],
     patches=patches,
     palm_rests=palm_rests,
     texts=texts,
