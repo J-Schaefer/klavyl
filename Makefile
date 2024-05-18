@@ -5,5 +5,5 @@ choc:
 	mv *.stl stl_choc/
 
 mx:
-	python3 klavyl.py --mx
+	python3 klavyl.py
 	mv *.stl stl_mx/
