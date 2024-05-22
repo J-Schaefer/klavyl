@@ -1,3 +1,4 @@
 [submodule "src/klavgen"]
 	path = src/klavgen
 	url = git@github.com:J-Schaefer/klavgen.git
+	branch = add-remove-hole-feature

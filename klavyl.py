@@ -27,7 +27,8 @@ config = Config(
     ),
     mx_key_config=MXKeyConfig(case_tile_margin=7.5),
     choc_key_config=ChocKeyConfig(case_tile_margin=7.6),
-    controller_config=ControllerConfig(case_tile_margin=5),
+    controller_config=ControllerConfig(case_tile_margin=5,
+                                       inner_structure=True),
     trrs_jack_config=TrrsJackConfig(case_tile_margin=5),
     usbc_jack_config=USBCJackConfig(case_tile_margin=5),
 )
@@ -148,17 +149,20 @@ texts = [
     # Text(x=11, y=-102, z=8, text="v10", font_size=10, extrude=0.4)
 ]
 
-controller = Controller(x=154, y=14)  # default: Arduino Pro Micro
+controller = Controller(x=154, y=0)  # default: Arduino Pro Micro
 
-usbc_jack = USBCJack(x=161, y=-51, rotate=-180)
-# usbs_jack_controller = USBCJack(x=154, y=14)
+trrs_jack = TrrsJack(x=161, y=-51, rotate=-180)
+
+# usbc_jack = USBCJack(x=161, y=-51, rotate=-180)
+usbc_jack_controller = USBCJack(x=154, y=14)
 
 keyboard_result = render_and_save_keyboard(
     keys=keys,
     screw_holes=screw_holes,
     controller=controller,
-    components=[usbc_jack],
+    components=[usbc_jack_controller],
     # components=[usbc_jack, usbs_jack_controller],
+    trrs_jack=trrs_jack,
     patches=patches,
     palm_rests=palm_rests,
     texts=texts,
