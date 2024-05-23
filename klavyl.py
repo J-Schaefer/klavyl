@@ -1,6 +1,6 @@
 import sys
-print(sys.path)
 sys.path.append("src/klavgen")
+# print(sys.path)
 
 import argparse
 from dataclasses import dataclass
@@ -113,8 +113,8 @@ patches = [
         points=[
             (-3, 14),
             (178, 14),
-            (178, -70),  # horizontal part under controller
-            (147, -70),  # horizontal part under controller
+            (178, -82),  # horizontal part under controller
+            (147, -82),  # horizontal part under controller
             (147, -100),
             (90, -93.2),
             (-3, -93.2),
@@ -151,11 +151,11 @@ texts = [
     # Text(x=11, y=-102, z=8, text="v10", font_size=10, extrude=0.4)
 ]
 
-controller = Controller(x=154, y=0)  # default: Arduino Pro Micro
+controller = Controller(x=156, y=-10)  # default: Arduino Pro Micro
 
-trrs_jack = TrrsJack(x=161, y=-51, rotate=-180)
+# trrs_jack = TrrsJack(x=161, y=-51, rotate=-180)
 
-usbc_jack = USBCJack(x=161, y=-70, rotate=-180)
+usbc_jack = USBCJack(x=164, y=-82, rotate=-180)
 usbc_jack_controller = USBCJack(x=154, y=14)
 
 keyboard_result = render_and_save_keyboard(
