@@ -28,6 +28,8 @@ config = Config(
     mx_key_config=MXKeyConfig(case_tile_margin=7.5),
     choc_key_config=ChocKeyConfig(case_tile_margin=7.6),
     controller_config=ControllerConfig(case_tile_margin=5,
+                                       item_width=21.5,  # Raspberry Pi Pico, default is Arduino Pro Micro
+                                       item_depth=51.6,  # Raspberry Pi Pico, default is Arduino Pro Micro
                                        inner_structure=True),
     trrs_jack_config=TrrsJackConfig(case_tile_margin=5),
     usbc_jack_config=USBCJackConfig(case_tile_margin=5),
@@ -111,8 +113,8 @@ patches = [
         points=[
             (-3, 14),
             (178, 14),
-            (178, -51),
-            (147, -51),
+            (178, -70),  # horizontal part under controller
+            (147, -70),  # horizontal part under controller
             (147, -100),
             (90, -93.2),
             (-3, -93.2),
@@ -153,16 +155,16 @@ controller = Controller(x=154, y=0)  # default: Arduino Pro Micro
 
 trrs_jack = TrrsJack(x=161, y=-51, rotate=-180)
 
-# usbc_jack = USBCJack(x=161, y=-51, rotate=-180)
+usbc_jack = USBCJack(x=161, y=-70, rotate=-180)
 usbc_jack_controller = USBCJack(x=154, y=14)
 
 keyboard_result = render_and_save_keyboard(
     keys=keys,
     screw_holes=screw_holes,
     controller=controller,
-    components=[usbc_jack_controller],
-    # components=[usbc_jack, usbs_jack_controller],
-    trrs_jack=trrs_jack,
+    # components=[usbc_jack_controller],
+    components=[usbc_jack, usbc_jack_controller],
+    # trrs_jack=trrs_jack,
     patches=patches,
     palm_rests=palm_rests,
     texts=texts,
