@@ -1,8 +1,8 @@
 # MCU name
-MCU = atmega32u4
+MCU = RP2040
 
 # Bootloader selection
-BOOTLOADER = caterina
+BOOTLOADER = rp2040
 
 # Build Options
 #   change yes to no to disable
@@ -20,3 +20,5 @@ SPLIT_KEYBOARD = yes
 # Disable unsupported hardware
 AUDIO_SUPPORTED = no
 BACKLIGHT_SUPPORTED = no
+
+SERIAL_DRIVER=vendor
