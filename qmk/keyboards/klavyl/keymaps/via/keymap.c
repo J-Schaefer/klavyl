@@ -1,9 +1,9 @@
 #include QMK_KEYBOARD_H
 
-#define KC_MAC_UNDO LGUI(KC_Z)
-#define KC_MAC_CUT LGUI(KC_X)
-#define KC_MAC_COPY LGUI(KC_C)
-#define KC_MAC_PASTE LGUI(KC_V)
+#define KC_MAC_UNDO LCTL(KC_Z)
+#define KC_MAC_CUT LCTL(KC_X)
+#define KC_MAC_COPY LCTL(KC_C)
+#define KC_MAC_PASTE LCTL(KC_V)
 #define KC_LCAG LCAG(KC_NO)
 
 enum custom_keycodes {
@@ -24,10 +24,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [1] = LAYOUT(
     KC_GRAVE,         KC_F1,         KC_F2,         KC_F3,        KC_F4,           KC_F5,          KC_F6,                                            KC_NO,                 KC_NO,         KC_NO,           KC_NO,            KC_NO,           KC_NO,              KC_NO,
-    KC_NO,            KC_NO,         KC_MS_BTN2,    KC_MS_UP,     KC_MS_BTN1,      KC_MS_WH_DOWN,  KC_NO,                                            QK_BOOTLOADER,         KC_MAC_CUT,    KC_MS_BTN1,      KC_NO,            KC_MS_BTN2,      KC_NO,              KC_NO,
-    KC_LEFT_SHIFT,    KC_PGUP,       KC_MS_LEFT,    KC_MS_DOWN,   KC_MS_RIGHT,     KC_MS_WH_UP,    KC_NO,                                            QK_CLEAR_EEPROM,       KC_MAC_COPY,   KC_LSFT,         KC_LGUI,          KC_LALT,         KC_LCTL,            KC_NO,
+    KC_NO,            KC_NO,         KC_MS_BTN2,    KC_MS_UP,     KC_MS_BTN1,      KC_MS_WH_UP,    KC_NO,                                            QK_BOOTLOADER,         KC_MAC_CUT,    KC_MS_BTN1,      KC_NO,            KC_MS_BTN2,      KC_NO,              KC_NO,
+    KC_LEFT_SHIFT,    KC_PGUP,       KC_MS_LEFT,    KC_MS_DOWN,   KC_MS_RIGHT,     KC_MS_WH_DOWN,  KC_NO,                                            QK_CLEAR_EEPROM,       KC_MAC_COPY,   KC_LSFT,         KC_LGUI,          KC_LALT,         KC_LCTL,            KC_NO,
     KC_LEFT_CTRL,     KC_PGDN,       KC_MAC_CUT,    KC_MAC_COPY,  KC_MAC_PASTE,    KC_NO,          KC_NO,                                            KC_NO,                 KC_MAC_PASTE,  KC_NO,           KC_NO,            KC_NO,           KC_NO,              KC_NO,
-                                                                  KC_NO,           KC_NO,          KC_AUDIO_VOL_DOWN,                                KC_AUDIO_VOL_UP,       QK_BOOTLOADER, KC_NO
+                                                                  KC_MS_BTN1,      KC_MS_BTN2,     KC_AUDIO_VOL_DOWN,                                KC_AUDIO_VOL_UP,       QK_BOOTLOADER, KC_NO
   ),
 
   [2] = LAYOUT(
