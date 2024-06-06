@@ -17,7 +17,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT(
     KC_ESCAPE,        KC_1,          KC_2,          KC_3,         KC_4,            KC_5,           KC_6,                                             KC_7,                  KC_8,          KC_9,            KC_0,             KC_MINUS,        KC_EQUAL,           KC_BSPC,
     KC_TAB,           KC_Q,          KC_W,          KC_E,         KC_R,            KC_T,           KC_DOT,                                           KC_DOT,                KC_Y,          KC_U,            KC_I,             KC_O,            KC_P,               KC_BSLS,
-    KC_LEFT_SHIFT,    LCTL_T(KC_A),  LALT_T(KC_S),  LGUI_T(KC_D), LSFT_T(KC_F),    LCAG_T(KC_G),   KC_DOT,                                           KC_BSLS,               LCAG_T(KC_H),  LSFT_T(KC_J),    LGUI_T(KC_K),     LALT_T(KC_L),    LCTL_T(KC_SCLN),    LT(2,KC_QUOTE),
+    KC_LEFT_SHFT,    LCTL_T(KC_A),  LGUI_T(KC_S),  LALT_T(KC_D), LSFT_T(KC_F),    LCAG_T(KC_G),   KC_DOT,                                           KC_BSLS,               LCAG_T(KC_H),  LSFT_T(KC_J),    LALT_T(KC_K),     LGUI_T(KC_L),    LCTL_T(KC_SCLN),    LT(2,KC_QUOTE),
     KC_LEFT_CTRL,     KC_Z,          KC_X,          KC_C,         KC_V,            KC_B,           KC_LEFT_BRACKET,                                  KC_RIGHT_BRACKET,      KC_N,          KC_M,            KC_COMMA_LBRACE,  KC_DOT_RBRACE,   KC_SLASH,           KC_LANGLEBR_RANGLEBR,
                                                                   LT(2,KC_SPACE),  KC_ENTER,       KC_DELETE,                                        KC_BSPC,               KC_ENTER,      LT(1,KC_SPACE)
   ),
