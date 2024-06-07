@@ -17,7 +17,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT(
     KC_ESCAPE,        KC_1,          KC_2,          KC_3,         KC_4,            KC_5,           KC_6,                                             KC_7,                  KC_8,          KC_9,            KC_0,             KC_MINUS,        KC_EQUAL,           KC_BSPC,
     KC_TAB,           KC_Q,          KC_W,          KC_E,         KC_R,            KC_T,           KC_DOT,                                           KC_DOT,                KC_Y,          KC_U,            KC_I,             KC_O,            KC_P,               KC_BSLS,
-    KC_LEFT_SHFT,    LCTL_T(KC_A),  LGUI_T(KC_S),  LALT_T(KC_D), LSFT_T(KC_F),    LCAG_T(KC_G),   KC_DOT,                                           KC_BSLS,               LCAG_T(KC_H),  LSFT_T(KC_J),    LALT_T(KC_K),     LGUI_T(KC_L),    LCTL_T(KC_SCLN),    LT(2,KC_QUOTE),
+    KC_LEFT_SHIFT,    LCTL_T(KC_A),  LGUI_T(KC_S),  LALT_T(KC_D), LSFT_T(KC_F),    LCAG_T(KC_G),   KC_DOT,                                           KC_BSLS,               LCAG_T(KC_H),  LSFT_T(KC_J),    LALT_T(KC_K),     LGUI_T(KC_L),    LCTL_T(KC_SCLN),    LT(2,KC_QUOTE),
     KC_LEFT_CTRL,     KC_Z,          KC_X,          KC_C,         KC_V,            KC_B,           KC_LEFT_BRACKET,                                  KC_RIGHT_BRACKET,      KC_N,          KC_M,            KC_COMMA_LBRACE,  KC_DOT_RBRACE,   KC_SLASH,           KC_LANGLEBR_RANGLEBR,
                                                                   LT(2,KC_SPACE),  KC_ENTER,       KC_DELETE,                                        KC_BSPC,               KC_ENTER,      LT(1,KC_SPACE)
   ),
@@ -25,7 +25,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [1] = LAYOUT(
     KC_GRAVE,         KC_F1,         KC_F2,         KC_F3,        KC_F4,           KC_F5,          KC_F6,                                            KC_NO,                 KC_NO,         KC_NO,           KC_NO,            KC_NO,           KC_NO,              KC_NO,
     KC_NO,            KC_NO,         KC_MS_BTN2,    KC_MS_UP,     KC_MS_BTN1,      KC_MS_WH_UP,    KC_NO,                                            QK_BOOTLOADER,         KC_MAC_CUT,    KC_MS_BTN1,      KC_NO,            KC_MS_BTN2,      KC_NO,              KC_NO,
-    KC_LEFT_SHIFT,    KC_PGUP,       KC_MS_LEFT,    KC_MS_DOWN,   KC_MS_RIGHT,     KC_MS_WH_DOWN,  KC_NO,                                            QK_CLEAR_EEPROM,       KC_MAC_COPY,   KC_LSFT,         KC_LGUI,          KC_LALT,         KC_LCTL,            KC_NO,
+    KC_LEFT_SHIFT,    KC_PGUP,       KC_MS_LEFT,    KC_MS_DOWN,   KC_MS_RIGHT,     KC_MS_WH_DOWN,  KC_NO,                                            QK_CLEAR_EEPROM,       KC_MAC_COPY,   KC_LSFT,         KC_LALT,          KC_LGUI,         KC_LCTL,            KC_NO,
     KC_LEFT_CTRL,     KC_PGDN,       KC_MAC_CUT,    KC_MAC_COPY,  KC_MAC_PASTE,    KC_NO,          KC_NO,                                            KC_NO,                 KC_MAC_PASTE,  KC_NO,           KC_NO,            KC_NO,           KC_NO,              KC_NO,
                                                                   KC_MS_BTN1,      KC_MS_BTN2,     KC_AUDIO_VOL_DOWN,                                KC_AUDIO_VOL_UP,       QK_BOOTLOADER, KC_NO
   ),
@@ -33,7 +33,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [2] = LAYOUT(
     QK_BOOTLOADER,    KC_NO,         KC_NO,         KC_NO,        KC_NO,           KC_NO,          KC_NO,                                            KC_F7,                 KC_F8,         KC_F9,           KC_F10,           KC_F11,          KC_F12,             KC_DELETE,
     KC_NO,            KC_NO,         KC_NO,         KC_NO,        KC_NO,           KC_NO,          KC_NO,                                            QK_BOOTLOADER,         KC_MAC_CUT,    LALT(KC_LEFT),   KC_UP,            LALT(KC_RIGHT),  KC_NO,              KC_NO,
-    KC_LEFT_SHIFT,    KC_LCTL,       KC_LALT,       KC_LGUI,      KC_LSFT,         KC_LCAG,        KC_NO,                                            QK_CLEAR_EEPROM,       KC_MAC_COPY,   KC_LEFT,         KC_DOWN,          KC_RIGHT,        KC_PGUP,            KC_NO,
+    KC_LEFT_SHIFT,    KC_LCTL,       KC_LGUI,       KC_LALT,      KC_LSFT,         KC_LCAG,        KC_NO,                                            QK_CLEAR_EEPROM,       KC_MAC_COPY,   KC_LEFT,         KC_DOWN,          KC_RIGHT,        KC_PGUP,            KC_NO,
     KC_LEFT_CTRL,     KC_NO,         KC_MAC_CUT,    KC_MAC_COPY,  KC_MAC_PASTE,    KC_NO,          KC_NO,                                            KC_NO,                 KC_MAC_PASTE,  LGUI(KC_LEFT),   KC_NO,            LGUI(KC_RIGHT),  KC_PGDN,            KC_NO,
                                                                   KC_NO,           QK_BOOTLOADER,  KC_AUDIO_VOL_DOWN,                                KC_AUDIO_VOL_UP,       KC_NO,         KC_NO
   )
