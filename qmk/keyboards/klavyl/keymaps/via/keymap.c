@@ -23,7 +23,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [1] = LAYOUT(
-    KC_GRAVE,         KC_F1,         KC_F2,         KC_F3,        KC_F4,           KC_F5,          KC_F6,                                            KC_NO,                 KC_NO,         KC_NO,           KC_NO,            KC_NO,           KC_NO,              KC_NO,
+    KC_GRAVE,         KC_F1,         KC_F2,         KC_F3,        KC_F4,           KC_F5,          KC_F6,                                            KC_F7,                 KC_F8,         KC_F9,           KC_F10,           KC_F11,          KC_F12,              KC_NO,
     KC_NO,            KC_NO,         KC_MS_BTN2,    KC_MS_UP,     KC_MS_BTN1,      KC_MS_WH_UP,    KC_NO,                                            QK_BOOTLOADER,         KC_MAC_CUT,    KC_MS_BTN1,      KC_NO,            KC_MS_BTN2,      KC_NO,              KC_NO,
     KC_LEFT_SHIFT,    KC_PGUP,       KC_MS_LEFT,    KC_MS_DOWN,   KC_MS_RIGHT,     KC_MS_WH_DOWN,  KC_NO,                                            QK_CLEAR_EEPROM,       KC_MAC_COPY,   KC_LSFT,         KC_LALT,          KC_LGUI,         KC_LCTL,            KC_NO,
     KC_LEFT_CTRL,     KC_PGDN,       KC_MAC_CUT,    KC_MAC_COPY,  KC_MAC_PASTE,    KC_NO,          KC_NO,                                            KC_NO,                 KC_MAC_PASTE,  KC_NO,           KC_NO,            KC_NO,           KC_NO,              KC_NO,
@@ -31,7 +31,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [2] = LAYOUT(
-    QK_BOOTLOADER,    KC_NO,         KC_NO,         KC_NO,        KC_NO,           KC_NO,          KC_NO,                                            KC_F7,                 KC_F8,         KC_F9,           KC_F10,           KC_F11,          KC_F12,             KC_BSPC,
+    QK_BOOTLOADER,    KC_F1,         KC_F2,         KC_F3,        KC_F4,           KC_F5,          KC_F6,                                            KC_F7,                 KC_F8,         KC_F9,           KC_F10,           KC_F11,          KC_F12,             KC_BSPC,
     KC_NO,            KC_NO,         KC_NO,         KC_NO,        KC_NO,           KC_NO,          KC_NO,                                            QK_BOOTLOADER,         KC_MAC_CUT,    LALT(KC_LEFT),   KC_UP,            LALT(KC_RIGHT),  KC_NO,              KC_NO,
     KC_LEFT_SHIFT,    KC_LCTL,       KC_LGUI,       KC_LALT,      KC_LSFT,         KC_LCAG,        KC_NO,                                            QK_CLEAR_EEPROM,       KC_MAC_COPY,   KC_LEFT,         KC_DOWN,          KC_RIGHT,        KC_PGUP,            KC_NO,
     KC_LEFT_CTRL,     LCA_T(KC_TAB), KC_MAC_CUT,    KC_MAC_COPY,  KC_MAC_PASTE,    KC_NO,          KC_NO,                                            KC_NO,                 KC_MAC_PASTE,  LGUI(KC_LEFT),   KC_NO,            LGUI(KC_RIGHT),  KC_PGDN,            KC_NO,
