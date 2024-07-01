@@ -24,9 +24,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [1] = LAYOUT(
     KC_GRAVE,         KC_F1,         KC_F2,         KC_F3,        KC_F4,           KC_F5,              KC_F6,                                            KC_F7,                 KC_F8,            KC_F9,           KC_F10,           KC_F11,          KC_F12,              KC_NO,
-    KC_NO,            KC_NO,         KC_MS_BTN2,    KC_MS_UP,     KC_MS_BTN1,      KC_MS_WH_UP,        KC_NO,                                            QK_BOOTLOADER,         KC_MAC_CUT,       KC_MS_BTN1,      KC_NO,            KC_MS_BTN2,      KC_NO,              KC_NO,
-    KC_LEFT_SHIFT,    KC_PGUP,       KC_MS_LEFT,    KC_MS_DOWN,   KC_MS_RIGHT,     KC_MS_WH_DOWN,      KC_NO,                                            QK_CLEAR_EEPROM,       KC_MAC_COPY,      KC_LSFT,         KC_LALT,          KC_LGUI,         KC_LCTL,            KC_NO,
-    KC_LEFT_CTRL,     KC_PGDN,       KC_WWW_BACK,   KC_MS_BTN3,   KC_WWW_FORWARD,  KC_NO,              KC_NO,                                            KC_NO,                 KC_MAC_PASTE,     KC_NO,           KC_NO,            KC_NO,           KC_NO,              KC_NO,
+    KC_MS_ACCEL2,     KC_NO,         KC_MS_BTN2,    KC_MS_UP,     KC_MS_BTN1,      KC_MS_WH_UP,        KC_NO,                                            QK_BOOTLOADER,         KC_MAC_CUT,       KC_MS_BTN1,      KC_NO,            KC_MS_BTN2,      KC_NO,              KC_NO,
+    KC_MS_ACCEL1,     KC_PGUP,       KC_MS_LEFT,    KC_MS_DOWN,   KC_MS_RIGHT,     KC_MS_WH_DOWN,      KC_NO,                                            QK_CLEAR_EEPROM,       KC_MAC_COPY,      KC_LSFT,         KC_LALT,          KC_LGUI,         KC_LCTL,            KC_NO,
+    KC_MS_ACCEL0,     KC_PGDN,       KC_WWW_BACK,   KC_MS_BTN3,   KC_WWW_FORWARD,  KC_NO,              KC_NO,                                            KC_NO,                 KC_MAC_PASTE,     KC_NO,           KC_NO,            KC_NO,           KC_NO,              KC_NO,
                                                                   KC_MS_BTN1,      KC_MS_BTN2,         KC_MS_BTN3,                                       KC_AUDIO_VOL_UP,       QK_BOOTLOADER,    KC_NO
   ),
 
