@@ -24,26 +24,26 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [1] = LAYOUT(
     KC_GRAVE,         KC_F1,         KC_F2,         KC_F3,        KC_F4,           KC_F5,              KC_F6,                                            KC_F7,                 KC_F8,            KC_F9,           KC_F10,           KC_F11,          KC_F12,              KC_NO,
-    KC_MS_ACCEL2,     KC_NO,         KC_MS_BTN2,    KC_MS_UP,     KC_MS_BTN1,      KC_MS_WH_UP,        KC_NO,                                            QK_BOOTLOADER,         KC_MAC_CUT,       KC_MS_BTN1,      KC_NO,            KC_MS_BTN2,      KC_NO,              KC_NO,
-    KC_MS_ACCEL1,     KC_PGUP,       KC_MS_LEFT,    KC_MS_DOWN,   KC_MS_RIGHT,     KC_MS_WH_DOWN,      KC_NO,                                            QK_CLEAR_EEPROM,       KC_MAC_COPY,      KC_LSFT,         KC_LALT,          KC_LGUI,         KC_LCTL,            KC_NO,
-    KC_MS_ACCEL0,     KC_PGDN,       KC_WWW_BACK,   KC_MS_BTN3,   KC_WWW_FORWARD,  KC_NO,              KC_NO,                                            KC_NO,                 KC_MAC_PASTE,     KC_NO,           KC_NO,            KC_NO,           KC_NO,              KC_NO,
-                                                                  KC_MS_BTN1,      KC_MS_BTN2,         KC_MS_BTN3,                                       KC_AUDIO_VOL_UP,       QK_BOOTLOADER,    KC_NO
+    KC_MS_ACCEL2,     KC_NO,         KC_MS_BTN2,    KC_MS_UP,     KC_MS_BTN1,      KC_MS_WH_UP,        KC_NO,                                            KC_NO,                 KC_MAC_CUT,       KC_MS_BTN1,      KC_NO,            KC_MS_BTN2,      KC_NO,               KC_NO,
+    KC_MS_ACCEL1,     KC_PGUP,       KC_MS_LEFT,    KC_MS_DOWN,   KC_MS_RIGHT,     KC_MS_WH_DOWN,      KC_NO,                                            KC_NO,                 KC_MAC_COPY,      KC_LSFT,         KC_LALT,          KC_LGUI,         KC_LCTL,             KC_NO,
+    KC_MS_ACCEL0,     KC_PGDN,       KC_WWW_BACK,   KC_MS_BTN3,   KC_WWW_FORWARD,  KC_NO,              KC_NO,                                            KC_NO,                 KC_MAC_PASTE,     KC_NO,           KC_NO,            KC_NO,           KC_NO,               KC_NO,
+                                                                  KC_MS_BTN1,      KC_MS_BTN2,         KC_MS_BTN3,                                       QK_CLEAR_EEPROM,       QK_BOOTLOADER,    KC_NO
   ),
 
   [2] = LAYOUT(
-    QK_BOOTLOADER,    KC_F1,         KC_F2,         KC_F3,        KC_F4,           KC_F5,              KC_F6,                                            KC_F7,                 KC_F8,            KC_F9,           KC_F10,           KC_F11,          KC_F12,             KC_BSPC,
-    KC_NO,            KC_NO,         KC_NO,         KC_NO,        KC_NO,           KC_NO,              KC_NO,                                            QK_BOOTLOADER,         KC_MAC_CUT,       LALT(KC_LEFT),   KC_UP,            LALT(KC_RIGHT),  KC_NO,              KC_NO,
-    KC_LEFT_SHIFT,    KC_LCTL,       KC_LGUI,       KC_LALT,      KC_LSFT,         KC_LCAG,            KC_NO,                                            QK_CLEAR_EEPROM,       KC_MAC_COPY,      KC_LEFT,         KC_DOWN,          KC_RIGHT,        KC_PGUP,            KC_NO,
+    KC_NO        ,    KC_F1,         KC_F2,         KC_F3,        KC_F4,           KC_F5,              KC_F6,                                            KC_F7,                 KC_F8,            KC_F9,           KC_F10,           KC_F11,          KC_F12,             KC_BSPC,
+    KC_NO,            KC_NO,         KC_NO,         KC_NO,        KC_NO,           KC_NO,              KC_NO,                                            KC_NO,                 KC_MAC_CUT,       LALT(KC_LEFT),   KC_UP,            LALT(KC_RIGHT),  KC_NO,              KC_NO,
+    KC_LEFT_SHIFT,    KC_LCTL,       KC_LGUI,       KC_LALT,      KC_LSFT,         KC_LCAG,            KC_NO,                                            KC_NO,                 KC_MAC_COPY,      KC_LEFT,         KC_DOWN,          KC_RIGHT,        KC_PGUP,            KC_NO,
     KC_LEFT_CTRL,     LCA_T(KC_TAB), KC_MAC_CUT,    KC_MAC_COPY,  KC_MAC_PASTE,    KC_NO,              KC_NO,                                            KC_NO,                 KC_MAC_PASTE,     LGUI(KC_LEFT),   KC_NO,            LGUI(KC_RIGHT),  KC_PGDN,            KC_NO,
-                                                                  KC_NO,           QK_BOOTLOADER,      KC_NO,                                            KC_NO,                 KC_NO,            KC_SPACE
+                                                                  KC_NO,           QK_BOOTLOADER,      QK_CLEAR_EEPROM,                                  KC_NO,                 KC_NO,            KC_SPACE
   ),
 
   [3] = LAYOUT(
-    QK_BOOTLOADER,    KC_NO,         KC_NO,         KC_NO,        KC_NO,           KC_NO,              KC_NO,                                            KC_F7,                 KC_F8,            KC_NUM_LOCK,     KC_KP_SLASH,      KC_KP_ASTERISK,  KC_KP_MINUS,             KC_BSPC,
-    KC_NO,            KC_NO,         KC_NO,         KC_NO,        KC_NO,           KC_NO,              KC_NO,                                            QK_BOOTLOADER,         KC_MAC_CUT,       KC_KP_7,         KC_KP_8,          KC_KP_9,         KC_KP_PLUS,              KC_NO,
-    KC_LEFT_SHIFT,    KC_LCTL,       KC_LGUI,       KC_LALT,      KC_LSFT,         KC_LCAG,            KC_NO,                                            QK_CLEAR_EEPROM,       KC_MAC_COPY,      KC_KP_4,         KC_KP_5,          KC_KP_6,         KC_KP_PLUS,            KC_NO,
-    KC_LEFT_CTRL,     KC_NO,         KC_MAC_CUT,    KC_MAC_COPY,  KC_MAC_PASTE,    KC_NO,              KC_NO,                                            KC_NO,                 KC_KP_0,          KC_KP_1,         KC_KP_2,          KC_KP_3,         KC_KP_ENTER,            KC_NO,
-                                                                  KC_NO,           KC_AUDIO_VOL_DOWN,  KC_AUDIO_VOL_UP,                                  KC_AUDIO_VOL_DOWN,     KC_AUDIO_VOL_UP,  KC_NO
+    QK_BOOTLOADER,    KC_NO,         KC_NO,         KC_NO,        KC_NO,           KC_NO,              KC_NO,                                            KC_F7,                 KC_NUM_LOCK,      KC_KP_SLASH,     KC_KP_ASTERISK,   KC_KP_MINUS,      KC_NO,            KC_BSPC,
+    KC_NO,            KC_NO,         KC_NO,         KC_NO,        KC_NO,           KC_NO,              KC_NO,                                            KC_NO,                 KC_KP_7,          KC_KP_8,         KC_KP_9,          KC_KP_PLUS,       KC_NO,            KC_NO,
+    KC_LEFT_SHIFT,    KC_LCTL,       KC_LGUI,       KC_LALT,      KC_LSFT,         KC_LCAG,            KC_NO,                                            KC_NO,                 KC_KP_4,          KC_KP_5,         KC_KP_5,          KC_KP_PLUS,       KC_NO,            KC_NO,
+    KC_LEFT_CTRL,     KC_NO,         KC_MAC_CUT,    KC_MAC_COPY,  KC_MAC_PASTE,    KC_NO,              KC_NO,                                            KC_NO,                 KC_KP_1,          KC_KP_2,         KC_KP_3,          KC_KP_ENTER,      KC_NO,            KC_NO,
+                                                                  KC_NO,           KC_AUDIO_VOL_DOWN,  KC_AUDIO_VOL_UP,                                  KC_AUDIO_VOL_DOWN,     KC_AUDIO_VOL_UP,  KC_KP_0
   )
 };
 
