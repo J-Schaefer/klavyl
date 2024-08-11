@@ -41,8 +41,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [3] = LAYOUT(
     QK_BOOTLOADER,    KC_NO,         KC_NO,         KC_NO,        KC_NO,           KC_NO,              KC_NO,                                            KC_F7,                 KC_NUM_LOCK,      KC_KP_SLASH,     KC_KP_ASTERISK,   KC_KP_MINUS,      KC_NO,            KC_BSPC,
     KC_NO,            KC_NO,         KC_NO,         KC_NO,        KC_NO,           KC_NO,              KC_NO,                                            KC_NO,                 KC_KP_7,          KC_KP_8,         KC_KP_9,          KC_KP_PLUS,       KC_NO,            KC_NO,
-    KC_LEFT_SHIFT,    LCA(KC_1),     LCA(KC_2),     LCA(KC_3),    LCA(KC_4),       KC_LCAG,            KC_NO,                                            KC_NO,                 KC_KP_4,          KC_KP_5,         KC_KP_5,          KC_KP_PLUS,       KC_NO,            KC_NO,
-    KC_LEFT_CTRL,     KC_NO,         KC_MAC_CUT,    KC_MAC_COPY,  KC_MAC_PASTE,    KC_NO,              KC_NO,                                            KC_NO,                 KC_KP_1,          KC_KP_2,         KC_KP_3,          KC_KP_ENTER,      KC_NO,            KC_NO,
+    KC_LEFT_SHIFT,    LCA(KC_1),     LCA(KC_2),     LCA(KC_3),    LCA(KC_4),       KC_LCAG,            KC_NO,                                            KC_NO,                 KC_KP_4,          KC_KP_5,         KC_KP_6,          KC_KP_ENTER,       KC_NO,            KC_NO,
+    KC_LEFT_CTRL,     KC_NO,         KC_MAC_CUT,    KC_MAC_COPY,  KC_MAC_PASTE,    KC_NO,              KC_NO,                                            KC_NO,                 KC_KP_1,          KC_KP_2,         KC_KP_3,          KC_KP_DOT,      KC_NO,            KC_NO,
                                                                   KC_NO,           KC_AUDIO_VOL_DOWN,  KC_AUDIO_VOL_UP,                                  KC_AUDIO_VOL_DOWN,     KC_AUDIO_VOL_UP,  KC_KP_0
   )
 };
