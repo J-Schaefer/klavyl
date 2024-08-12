@@ -8,4 +8,4 @@
 #define SERIAL_USART_PIN_SWAP      // Swap TX and RX pins if keyboard is master halve. (Only available on some MCUs)
 
 // Configure the global tapping term (default: 200ms)
-#define TAPPING_TERM 220
+#define TAPPING_TERM 200
