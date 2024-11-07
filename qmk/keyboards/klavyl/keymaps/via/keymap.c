@@ -42,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     QK_BOOTLOADER,    KC_NO,         KC_NO,         KC_NO,        KC_NO,           KC_NO,              KC_NO,                                            KC_F7,                 KC_NUM_LOCK,      KC_KP_SLASH,     KC_KP_ASTERISK,   KC_KP_MINUS,      KC_NO,            KC_BSPC,
     KC_NO,            LGUI(KC_F2),   LGUI(KC_F3),   LGUI(KC_F4),  LGUI(KC_F5),     KC_NO,              KC_NO,                                            KC_NO,                 KC_KP_7,          KC_KP_8,         KC_KP_9,          KC_KP_PLUS,       KC_NO,            KC_NO,
     KC_LEFT_SHIFT,    LCA(KC_1),     LCA(KC_2),     LCA(KC_3),    LCA(KC_4),       KC_LCAG,            KC_NO,                                            KC_NO,                 KC_KP_4,          KC_KP_5,         KC_KP_6,          KC_KP_ENTER,      KC_NO,            KC_NO,
-    KC_LEFT_CTRL,     LCTL(KC_F10),  LCTL(KC_F9),   LCTL(KC_F7),  LCTL(KC_F8),     KC_NO,              KC_NO,                                            KC_NO,                 KC_KP_1,          KC_KP_2,         KC_KP_3,          KC_KP_DOT,        KC_NO,            KC_NO,
+    KC_LEFT_CTRL,     LGUI(KC_F1),  LGUI(KC_F2),   LGUI(KC_F3),  LGUI(KC_F4),     KC_NO,              KC_NO,                                            KC_NO,                 KC_KP_1,          KC_KP_2,         KC_KP_3,          KC_KP_DOT,        KC_NO,            KC_NO,
                                                                   KC_NO,           KC_AUDIO_VOL_DOWN,  KC_AUDIO_VOL_UP,                                  KC_BSPC,               KC_DELETE,        KC_KP_0
   )
 };
